@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  etl:
+    build: .
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data/:/app/data/
